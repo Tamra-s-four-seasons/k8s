@@ -10,7 +10,3 @@ CREATE TABLE IF NOT EXISTS users (
 
 GRANT ALL PRIVILEGES ON mydb.* TO 'myuser'@'%' IDENTIFIED BY 'mypass123';
 FLUSH PRIVILEGES;
-
-       MYSQL_USER: myuser
-          MYSQL_PASSWORD: mypass123
-          MYSQL_DATABASE: mydb
