@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodb
-  namespace: default
+  name: mysqldb
+  namespace: goormthon-6
 spec:
   clusterIP: None
   selector:
-    app: mongodb
+    app: mysqldb
   ports:
-    - name: mongo
-      port: 27017
-      targetPort: 27017
+    - name: mysql
+      port: 3306
+      targetPort: 3306
