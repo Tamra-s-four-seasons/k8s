@@ -8,5 +8,9 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(100)
 );
 
-GRANT ALL PRIVILEGES ON mydb.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword';
+GRANT ALL PRIVILEGES ON mydb.* TO 'myuser'@'%' IDENTIFIED BY 'mypass123';
 FLUSH PRIVILEGES;
+
+       MYSQL_USER: myuser
+          MYSQL_PASSWORD: mypass123
+          MYSQL_DATABASE: mydb
