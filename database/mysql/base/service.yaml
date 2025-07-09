@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysqldb
-  namespace: goormthon-6
+  name: mysql
 spec:
   clusterIP: None
   selector:
-    app: mysqldb
+    app: mysql
   ports:
     - name: mysql
       port: 3306

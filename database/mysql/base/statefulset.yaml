@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: mysql
-  namespace: goormthon-6
 spec:
   serviceName: mysql
   replicas: 1
