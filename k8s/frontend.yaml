@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-frontend
+  name: next-frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: react-frontend
+      app: next-frontend
   template:
     metadata:
       labels:
-        app: react-frontend
+        app: next-frontend
     spec:
       containers:
       - name: frontend
@@ -24,15 +24,15 @@ spec:
       volumes:
       - name: config-volume
         configMap:
-          name: react-frontend-config
+          name: next-frontend-config
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: react-frontend
+  name: next-frontend
 spec:
   selector:
-    app: react-frontend
+    app: next-frontend
   ports:
   - port: 80
     targetPort: 3000
