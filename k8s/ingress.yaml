@@ -17,3 +17,7 @@ spec:
             name: next-frontend
             port:
               number: 3000
+  tls:
+    - hosts:
+        - team6.goorm.training
+      secretName: team6-tls
