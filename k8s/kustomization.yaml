@@ -1,7 +1,7 @@
 resources:
   - front-end/frontend.yaml
-  - back-end/backend.yaml
-  - front-end/ingress.yaml
+  - backend.yaml
+  - ingress.yaml
 
 configMapGenerator:
   - name: next-frontend-config #fix me
